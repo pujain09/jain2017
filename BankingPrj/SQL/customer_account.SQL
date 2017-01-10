@@ -1,0 +1,46 @@
+SET DEFINE OFF;
+Insert into HR.CUSTOMERACCOUNT
+   (CUSTOMER_ID, ACCOUNT_ID, BANK_ID)
+ Values
+   (1, 1, 1);
+Insert into HR.CUSTOMERACCOUNT
+   (CUSTOMER_ID, ACCOUNT_ID, BANK_ID)
+ Values
+   (1, 1, 2);
+Insert into HR.CUSTOMERACCOUNT
+   (CUSTOMER_ID, ACCOUNT_ID, BANK_ID)
+ Values
+   (2, 5, 3);
+Insert into HR.CUSTOMERACCOUNT
+   (CUSTOMER_ID, ACCOUNT_ID, BANK_ID)
+ Values
+   (3, 4, 8);
+Insert into HR.CUSTOMERACCOUNT
+   (CUSTOMER_ID, ACCOUNT_ID, BANK_ID)
+ Values
+   (2, 4, 4);
+Insert into HR.CUSTOMERACCOUNT
+   (CUSTOMER_ID, ACCOUNT_ID, BANK_ID)
+ Values
+   (4, 1, 9);
+Insert into HR.CUSTOMERACCOUNT
+   (CUSTOMER_ID, ACCOUNT_ID, BANK_ID)
+ Values
+   (5, 3, 2);
+Insert into HR.CUSTOMERACCOUNT
+   (CUSTOMER_ID, ACCOUNT_ID, BANK_ID)
+ Values
+   (5, 2, 6);
+Insert into HR.CUSTOMERACCOUNT
+   (CUSTOMER_ID, ACCOUNT_ID, BANK_ID)
+ Values
+   (8, 1, 7);
+Insert into HR.CUSTOMERACCOUNT
+   (CUSTOMER_ID, ACCOUNT_ID, BANK_ID)
+ Values
+   (9, 5, 10);
+Insert into HR.CUSTOMERACCOUNT
+   (CUSTOMER_ID, ACCOUNT_ID, BANK_ID)
+ Values
+   (10, 4, 2);
+COMMIT;

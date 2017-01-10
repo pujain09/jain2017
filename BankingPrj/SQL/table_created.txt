@@ -1,0 +1,125 @@
+Database : oracle
+username : hr
+password : hr
+
+CREATE TABLE HR.BANKINFORMATION
+(
+  ID       NUMBER                               NOT NULL,
+  NAME     VARCHAR2(20 BYTE)                    NOT NULL,
+  ADDRESS  VARCHAR2(20 BYTE)                    NOT NULL,
+  PHONE    VARCHAR2(20 BYTE)                    NOT NULL
+)
+TABLESPACE USERS
+RESULT_CACHE (MODE DEFAULT)
+PCTUSED    0
+PCTFREE    10
+INITRANS   1
+MAXTRANS   255
+STORAGE    (
+            INITIAL          64K
+            NEXT             1M
+            MAXSIZE          UNLIMITED
+            MINEXTENTS       1
+            MAXEXTENTS       UNLIMITED
+            PCTINCREASE      0
+            BUFFER_POOL      DEFAULT
+            FLASH_CACHE      DEFAULT
+            CELL_FLASH_CACHE DEFAULT
+           )
+LOGGING 
+NOCOMPRESS 
+NOCACHE
+NOPARALLEL
+MONITORING;
+
+
+CREATE TABLE HR.ACCOUNTINFORMATION
+(
+  TYPE_ID    NUMBER                             NOT NULL,
+  TYPE_NAME  VARCHAR2(10 BYTE)                  NOT NULL
+)
+TABLESPACE USERS
+RESULT_CACHE (MODE DEFAULT)
+PCTUSED    0
+PCTFREE    10
+INITRANS   1
+MAXTRANS   255
+STORAGE    (
+            INITIAL          64K
+            NEXT             1M
+            MAXSIZE          UNLIMITED
+            MINEXTENTS       1
+            MAXEXTENTS       UNLIMITED
+            PCTINCREASE      0
+            BUFFER_POOL      DEFAULT
+            FLASH_CACHE      DEFAULT
+            CELL_FLASH_CACHE DEFAULT
+           )
+LOGGING 
+NOCOMPRESS 
+NOCACHE
+NOPARALLEL
+MONITORING;
+
+
+CREATE TABLE HR.CUSTOMERINFORMATION
+(
+  ID          NUMBER                            NOT NULL,
+  FIRST_NAME  VARCHAR2(10 BYTE)                 NOT NULL,
+  LAST_NAME   VARCHAR2(10 BYTE)                 NOT NULL,
+  USERNAME    VARCHAR2(20 BYTE)                 NOT NULL,
+  PASSWORD    VARCHAR2(20 BYTE)                 NOT NULL,
+  EMAIL       VARCHAR2(30 BYTE)                 NOT NULL
+)
+TABLESPACE USERS
+RESULT_CACHE (MODE DEFAULT)
+PCTUSED    0
+PCTFREE    10
+INITRANS   1
+MAXTRANS   255
+STORAGE    (
+            INITIAL          64K
+            NEXT             1M
+            MAXSIZE          UNLIMITED
+            MINEXTENTS       1
+            MAXEXTENTS       UNLIMITED
+            PCTINCREASE      0
+            BUFFER_POOL      DEFAULT
+            FLASH_CACHE      DEFAULT
+            CELL_FLASH_CACHE DEFAULT
+           )
+LOGGING 
+NOCOMPRESS 
+NOCACHE
+NOPARALLEL
+MONITORING;
+
+
+CREATE TABLE HR.CUSTOMERACCOUNT
+(
+  CUSTOMER_ID  NUMBER                           NOT NULL,
+  ACCOUNT_ID   NUMBER                           NOT NULL,
+  BANK_ID      NUMBER                           NOT NULL
+)
+TABLESPACE USERS
+RESULT_CACHE (MODE DEFAULT)
+PCTUSED    0
+PCTFREE    10
+INITRANS   1
+MAXTRANS   255
+STORAGE    (
+            INITIAL          64K
+            NEXT             1M
+            MAXSIZE          UNLIMITED
+            MINEXTENTS       1
+            MAXEXTENTS       UNLIMITED
+            PCTINCREASE      0
+            BUFFER_POOL      DEFAULT
+            FLASH_CACHE      DEFAULT
+            CELL_FLASH_CACHE DEFAULT
+           )
+LOGGING 
+NOCOMPRESS 
+NOCACHE
+NOPARALLEL
+MONITORING;
